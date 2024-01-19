@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+
+
+<Pane fx:id="Base" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="80.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="2.0" height="5.0" layoutY="18.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle arcHeight="5.0" arcWidth="2.0" height="5.0" layoutX="60.0" layoutY="18.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle arcHeight="5.0" arcWidth="20.0" fill="#bbc8d4" height="10.0" layoutY="16.0" stroke="RED" strokeType="INSIDE" width="10.0" />
+      <Rectangle arcHeight="5.0" arcWidth="20.0" fill="#bbc8d4" height="10.0" layoutX="70.0" layoutY="16.0" stroke="RED" strokeType="INSIDE" width="10.0" />
+      <Label fx:id="label" alignment="CENTER" contentDisplay="CENTER" layoutY="42.0" prefWidth="80.0" text="0 Ω" />
+      <Rectangle arcHeight="5.0" arcWidth="3.0" height="5.0" layoutX="52.0" layoutY="12.0" rotate="65.0" stroke="BLACK" strokeType="INSIDE" width="15.0" />
+      <Rectangle arcHeight="5.0" arcWidth="2.0" height="5.0" layoutX="14.0" layoutY="24.0" rotate="65.0" stroke="BLACK" strokeType="INSIDE" width="15.0" />
+      <Rectangle arcHeight="5.0" arcWidth="2.0" height="5.0" layoutX="37.0" layoutY="19.0" rotate="-65.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
+      <Rectangle arcHeight="5.0" arcWidth="2.0" height="5.0" layoutX="26.0" layoutY="19.0" rotate="65.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
+      <Rectangle arcHeight="5.0" arcWidth="2.0" height="5.0" layoutX="15.0" layoutY="19.0" rotate="-65.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
+   </children>
+</Pane>

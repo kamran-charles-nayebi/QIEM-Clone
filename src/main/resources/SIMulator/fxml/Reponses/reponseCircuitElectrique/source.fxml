@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="Base" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="80.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" height="5.0" layoutY="18.0" stroke="BLACK" strokeType="INSIDE" width="35.0" />
+      <Rectangle arcHeight="5.0" height="5.0" layoutX="45.0" layoutY="18.0" stroke="BLACK" strokeType="INSIDE" width="35.0" />
+      <Rectangle arcHeight="5.0" height="38.0" layoutX="35.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" width="5.0" />
+      <Rectangle arcHeight="5.0" height="30.0" layoutX="45.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="3.0" />
+      <Rectangle arcHeight="5.0" arcWidth="20.0" fill="#bbc8d4" height="10.0" layoutY="16.0" stroke="RED" strokeType="INSIDE" width="10.0" />
+      <Rectangle arcHeight="5.0" arcWidth="20.0" fill="#bbc8d4" height="10.0" layoutX="70.0" layoutY="16.0" stroke="RED" strokeType="INSIDE" width="10.0" />
+      <Label fx:id="label" alignment="CENTER" contentDisplay="CENTER" layoutY="42.0" prefWidth="80.0" />
+      <Text layoutX="25.0" layoutY="16.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+" />
+      <Text layoutX="50.0" layoutY="16.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" />
+   </children>
+</Pane>

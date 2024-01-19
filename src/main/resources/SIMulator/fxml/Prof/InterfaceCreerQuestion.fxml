@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="10.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SIMulator.Prof.InterfaceCreerQuestionControlleur">
+   <children>
+      <HBox alignment="CENTER" spacing="10.0">
+         <children>
+            <Label style="-fx-background-color: #c43d2c; -fx-background-radius: 4;" text="Question" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <padding>
+                  <Insets bottom="2.0" left="4.0" right="4.0" top="2.0" />
+               </padding></Label>
+            <TextField fx:id="questionText" prefHeight="25.0" prefWidth="373.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" spacing="10.0">
+         <children>
+            <Label style="-fx-background-color: #c43d2c; -fx-background-radius: 4;" text="Réponse" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <padding>
+                  <Insets bottom="2.0" left="4.0" right="4.0" top="2.0" />
+               </padding></Label>
+            <TextField fx:id="reponseText" prefHeight="25.0" prefWidth="376.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="71.0" prefWidth="772.0" spacing="10.0">
+         <children>
+            <VBox alignment="CENTER" spacing="10.0">
+               <children>
+                  <Label style="-fx-background-color: #c43d2c; -fx-background-radius: 4;" text="Choix réponse 1" textAlignment="CENTER" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="2.0" left="4.0" right="4.0" top="2.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="ChoixReponse1Text" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" spacing="10.0">
+               <children>
+                  <Label style="-fx-background-color: #c43d2c; -fx-background-radius: 4;" text="Choix réponse 2" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="2.0" left="4.0" right="4.0" top="2.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="ChoixReponse2Text" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" spacing="10.0">
+               <children>
+                  <Label style="-fx-background-color: #c43d2c; -fx-background-radius: 4;" text="Choix réponse 3" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="2.0" left="4.0" right="4.0" top="2.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="ChoixReponse3Text" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" spacing="10.0">
+         <children>
+            <Label style="-fx-background-color: #c43d2c; -fx-background-radius: 4;" text="Solution" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <padding>
+                  <Insets bottom="2.0" left="4.0" right="4.0" top="2.0" />
+               </padding></Label>
+            <TextField fx:id="solutionText" prefHeight="25.0" prefWidth="383.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" spacing="10.0">
+         <children>
+            <Label style="-fx-background-color: #c43d2c; -fx-background-radius: 4;" text="Matière" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <padding>
+                  <Insets bottom="2.0" left="4.0" right="4.0" top="2.0" />
+               </padding></Label>
+            <TextField fx:id="matiereText" prefHeight="25.0" prefWidth="194.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#creerQuestionButton" style="-fx-background-color: #f74d37;" text="Créer la question" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="7.0" />
+               </HBox.margin></Button>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets top="30.0" />
+   </padding>
+</VBox>

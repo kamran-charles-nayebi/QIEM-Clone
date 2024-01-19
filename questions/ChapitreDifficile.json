@@ -1,0 +1,32 @@
+{
+  "ReponseLogique": [
+    {
+      "Question": "Une boule de métal chargée de {Charge} Coulomb ayant une masse de {Masse} kg est accélérée de {Acceleration} m/s² par un générateur Van de Graaff. À quelle distance de ce générateur se trouve la masse?",
+      "Variables": {
+        "Masse": "1:5",
+        "Acceleration": "3:10",
+        "Charge": "1:7",
+        "k": "9e9",
+        "Force": "",
+        "Champ": "",
+        "Rayon": ""
+      },
+      "Reponse": "{Rayon}:√({k}*{Charge}/(({Masse}*{Acceleration})/{Charge}))",
+      "Solution": "Il faut utiliser la formule F=ma pour trouver la force, F=qE pour trouver le champ et ensuite trouver le rayon avec E=kq/r²",
+      "Matiere": "Force électrique"
+    },
+    {
+      "Question": "On on a un fil de {Longueur} m avec un résistor de {Resistance} ohms connecté en série au centre. On met une extrémité du fil au centre d'un générateur Van de Graaff ayant un champ électrique de {Champ} N/m et l'autre extrémité le plus loin possible du générateur. Quelle est la puissance dissipée par le résistor?",
+      "Variables": {
+        "Longueur": "1:5",
+        "Resistance": "2:50",
+        "Champ": "1:6",
+        "DiffDePotentiel": "",
+        "Puissance": ""
+      },
+      "Reponse": "{Puissance}:{Champ}*{Longueur}/{Resistance}*{Champ}*{Longueur}",
+      "Solution": "Il faut utiliser la formule F=ma pour trouver la force, F=qE pour trouver le champ et ensuite trouver le rayon avec E=kq/r²",
+      "Matiere": "Force électrique"
+    }
+  ]
+}

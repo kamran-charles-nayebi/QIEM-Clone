@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_RIGHT" prefHeight="200.0" prefWidth="100.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SIMulator.Prof.InterfaceQuestionControlleur">
+   <children>
+      <TableView fx:id="tableView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="441.0" prefWidth="682.0">
+         <columns>
+            <TableColumn fx:id="QuestionCol" prefWidth="219.0" text="Question" />
+            <TableColumn fx:id="ReponseCol" minWidth="0.0" prefWidth="238.0" text="Réponse" />
+            <TableColumn fx:id="TypeCol" minWidth="0.0" prefWidth="224.0" text="Type" />
+         </columns>
+      </TableView>
+      <Button mnemonicParsing="false" onAction="#ajouterQuestion" style="-fx-background-color: #f74d37;" text="Ajouter Question" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+   </children>
+</VBox>

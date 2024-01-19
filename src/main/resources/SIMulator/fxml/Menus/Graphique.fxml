@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SIMulator.GraphiqueControlleur">
+   <children>
+      <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="20.0" VBox.vgrow="ALWAYS">
+         <children>
+            <BarChart fx:id="barChart" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" title="Pourcentage par quiz" HBox.hgrow="ALWAYS">
+              <xAxis>
+                <CategoryAxis label="Essai" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" side="BOTTOM" fx:id="xAxis" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="yAxis" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" side="LEFT" />
+              </yAxis>
+            </BarChart>
+            <BarChart fx:id="barChart2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" title="Pourcentage par chapitres" HBox.hgrow="ALWAYS">
+              <xAxis>
+                <CategoryAxis label="Chapitre" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" side="BOTTOM" fx:id="xAxis2" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="yAxis2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="454.0" prefWidth="27.0" side="LEFT" />
+              </yAxis>
+            </BarChart>
+            <BarChart fx:id="barChart3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" title="Pourcentage par matières" HBox.hgrow="ALWAYS">
+              <xAxis>
+                <CategoryAxis label="Matière" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" side="BOTTOM" fx:id="xAxis3" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="yAxis3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" side="LEFT" />
+              </yAxis>
+            </BarChart>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+         <children>
+            <Label fx:id="recommandation" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #c43d2c; -fx-background-radius: 4;" text="Recommandation" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="2.0" left="4.0" right="4.0" top="2.0" />
+               </padding>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>

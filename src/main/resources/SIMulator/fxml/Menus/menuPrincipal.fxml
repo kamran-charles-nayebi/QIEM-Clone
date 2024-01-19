@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SIMulator.mainMenuControlleur">
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+         <children>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#physiqueButtonAction" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: white;" text="PHYSIQUE">
+               <font>
+                  <Font name="Italic" size="12.0" />
+               </font>
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color green="0.4476190507411957" blue="1.0" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </Button>
+            <ImageView fitHeight="95.0" fitWidth="141.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Physique.png" />
+               </image>
+               <effect>
+                  <Reflection />
+               </effect>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+   <effect>
+      <InnerShadow choke="0.47" height="255.0" radius="127.0" width="255.0">
+         <color>
+            <Color red="0.1899999976158142" green="0.6528571248054504" blue="1.0" />
+         </color>
+      </InnerShadow>
+   </effect>
+</VBox>

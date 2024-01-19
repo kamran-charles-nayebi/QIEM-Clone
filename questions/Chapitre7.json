@@ -1,0 +1,192 @@
+{
+  "ReponseTextuelle": [
+    {
+      "Question": "Comment se nomme l'aptitude d'un matériau conducteur à s'opposer au passage d'un courant électrique sous une tension électrique donnée",
+      "Reponse": "résistance",
+      "Format": "",
+      "Solution": "Cette aptitude s'appelle la résistance",
+      "Matiere": "Compréhension des circuits"
+    },{
+      "Question": "Un circuit à deux résistors branchés en série a une résistance totale de {r3} Ohms. Si un des résistors a une résistance de {r1} Ohms, quelle est la valeur de la résistance du second résistor? (répondre avec un chiffre après la virgule)",
+      "Variables": {
+        "r1": "10:60:%.0f",
+        "r2": "10:60:%.0f",
+        "r3": "{r1}+{r2}:%.0f"
+      },
+      "Reponse": "{r2}",
+      "Solution": "La résistance totale de deux résistances en série est égale à la somme des deux résistances. Dans ce cas, la résistance à trouver est égale à {r3} - {r1} = {r2}",
+      "Matiere": "Calculs de résistances",
+      "Format": "%.0f"
+    }
+  ],
+  "ReponseChoix": [
+    {
+      "Question": "Quel est le rôle d'un condensateur dans un circuit électrique ?",
+      "Reponse": "Stocker de l'énergie électrique",
+      "ChoixReponse": "Ralentir le courant électrique;Amplifier le courant électrique;Bloquer le courant électrique",
+      "Solution": "",
+      "Matiere": "Compréhension des circuits"
+    },
+    {
+      "Question": "Comment mesure-t-on la valeur d'une résistance électrique ?",
+      "Reponse": "En ohms",
+      "ChoixReponse": "En volts;En ampères;En watts",
+      "Solution": "",
+      "Matiere": "Compréhension des circuits"
+    },
+    {
+      "Question": "Quelle est l'unité de mesure de la charge électrique ?",
+      "Reponse": "Le coulomb",
+      "ChoixReponse": "Le volt;L'ampère;Le watt",
+      "Solution": "",
+      "Matiere": "Compréhension des circuits"
+    },
+    {
+      "Question": "Comment s'appelle le dispositif qui permet de mesurer l'intensité du courant électrique ?",
+      "Reponse": "Un ampèremètre",
+      "ChoixReponse": "Un voltmètre;Un wattmètre;Un ohmmètre",
+      "Solution": "",
+      "Matiere": "Compréhension des circuits"
+    }
+  ],
+  "ReponseCircuitElectrique": [
+    {
+      "Question": "Montez un circuit qui a une résistance totale de {r4} Ohm",
+      "Variables": {
+        "r1": "5:10:%.0f",
+        "r2": "15:20:%.0f",
+        "r3": "20:25:%.0f",
+        "r4": "{r1}+{r2}:%.1f"
+      },
+      "ReponseResistance": "r4",
+      "Reponse": "{r4}",
+      "Solution": "La résistance totale est l'addition de deux résistances en séries.",
+      "Matiere": "Calculs de résistances",
+      "Format": "%.1f"
+    },
+    {
+      "Question": "Montez un circuit qui a une résistance totale de {r4} Ohm",
+      "Variables": {
+        "r1": "1:20:%.0f",
+        "r2": "5:10:%.0f",
+        "r3": "20:25:%.0f",
+        "r4": "(1/((1/{r1})+(1/{r2})))+{r3}:%.1f"
+      },
+      "ReponseResistance": "r4",
+      "Reponse": "{r4}",
+      "Solution": "Pour obtenir une résistance de {r4} Ohm, nous devons mettre la résistance de {r1} Ohm et celle de {r2} Ohm en parallèle, puis mettre la résistance de {r3} Ohm en série",
+      "Matiere": "Calculs de résistances",
+      "Format": "%.1f"
+    },
+    {
+      "Question": "Montez un circuit qui a une résistance totale de {r4} Ohm",
+      "Variables": {
+        "r1": "1:20:%.0f",
+        "r2": "5:10:%.0f",
+        "r3": "20:25:%.0f",
+        "r5": "40:75:%.0f",
+        "r4": "(1/((1/{r1})+(1/{r2})))+{r3}+{r5}:%.1f"
+      },
+      "ReponseResistance": "r4",
+      "Reponse": "{r4}",
+      "Solution": "Pour obtenir une résistance de {r4} Ohm, nous devons mettre la résistance de {r1} Ohm et celle de {r2} Ohm en parallèle, puis mettre la résistance de {r3} et {r5} Ohm en série",
+      "Matiere": "Calculs de résistances",
+      "Format": "%.1f"
+    },
+    {
+      "Question": "Montez un circuit qui a une résistance totale de {r4} Ohm",
+      "Variables": {
+        "r1": "1:20:%.0f",
+        "r2": "5:10:%.0f",
+        "r3": "20:25:%.0f",
+        "r4": "(1/((1/{r1})+(1/{r2})+(1/{r3}))):%.1f"
+      },
+      "ReponseResistance": "r4",
+      "Reponse": "{r4}",
+      "Solution": "Pour obtenir une résistance de {r4} Ohm, nous devons mettre les trois résistance : {r1} , {r2} , {r3} Ohm en parallèle",
+      "Matiere": "Calculs de résistances",
+      "Format": "%.1f"
+    }
+  ],
+  "ReponseDessinVectoriel": [
+    {
+      "Question": "Dessiner un vecteur d'approximativement deux unités de longueur qui représente la direction de la force totale subie sur l'électron",
+      "GrilleXMin": "0",
+      "GrilleXMax": "100",
+      "GrilleYMin": "0",
+      "GrilleYMax": "100",
+      "GrilleXStep": "10",
+      "GrilleYStep": "10",
+      "ReponseXDebut": "50",
+      "ReponseYDebut": "50",
+      "ReponseXFin": "50",
+      "ReponseYFin": "30",
+      "Point1X": "0",
+      "Point1Y": "50",
+      "Point1SousTexte": "-1 C",
+      "Point1Texte": "-",
+      "Point1RGB": "0;0;0",
+      "Point2X": "0",
+      "Point2Y": "30",
+      "Point2SousTexte": "1 C",
+      "Point2Texte": "+",
+      "Point2RGB": "1;0;0",
+      "Reponse": "affichée sur le graphique",
+      "Solution": "",
+      "Matiere": "VecteursForce"
+    },
+    {
+      "Question": "Dessiner un vecteur d'approximativement deux unités de longueur qui représente la direction de la force totale subie sur l'électron du centre",
+      "GrilleXMin": "0",
+      "GrilleXMax": "100",
+      "GrilleYMin": "0",
+      "GrilleYMax": "100",
+      "GrilleXStep": "10",
+      "GrilleYStep": "10",
+      "ReponseXDebut": "50",
+      "ReponseYDebut": "50",
+      "ReponseXFin": "70",
+      "ReponseYFin": "50",
+      "Point1X": "0",
+      "Point1Y": "50",
+      "Point1SousTexte": "-1 C",
+      "Point1Texte": "",
+      "Point1RGB": "0;0;0",
+      "Point2X": "-30",
+      "Point2Y": "50",
+      "Point2SousTexte": "-1 C",
+      "Point2Texte": "",
+      "Point2RGB": "0;0;0",
+      "Reponse": "affichée sur le graphique",
+      "Solution": "",
+      "Matiere": "VecteursForce"
+    },
+    {
+      "Question": "Dessiner un vecteur d'approximativement deux unités de longueur qui représente la direction de la force totale subie sur le proton du centre",
+      "GrilleXMin": "0",
+      "GrilleXMax": "100",
+      "GrilleYMin": "0",
+      "GrilleYMax": "100",
+      "GrilleXStep": "10",
+      "GrilleYStep": "10",
+      "ReponseXDebut": "50",
+      "ReponseYDebut": "50",
+      "ReponseXFin": "40",
+      "ReponseYFin": "30",
+      "Point1X": "0",
+      "Point1Y": "50",
+      "Point1SousTexte": "1 C",
+      "Point1Texte": "+",
+      "Point1RGB": "1;0;0",
+      "Point2X": "10",
+      "Point2Y": "70",
+      "Point2SousTexte": "1 C",
+      "Point2Texte": "+",
+      "Point2RGB": "1;0;0",
+      "Reponse": "affichée sur le graphique",
+      "Solution": "",
+      "Matiere": "VecteursForce"
+    }
+  ]
+}
+

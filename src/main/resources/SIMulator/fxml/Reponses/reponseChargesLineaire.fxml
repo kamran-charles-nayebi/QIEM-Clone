@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+
+<VBox alignment="CENTER" onMouseClicked="#userInput" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="labelIndicatif" text="Veuillez placer la charge équilibrante" />
+      <HBox alignment="CENTER" maxHeight="250.0" maxWidth="500.0" minHeight="250.0" minWidth="500.0" prefHeight="250.0" prefWidth="500.0">
+         <children>
+            <Rectangle fx:id="lineRectangle" arcHeight="5.0" arcWidth="5.0" fill="#a4a4a4" height="4.0" onMouseClicked="#userInput" onMouseDragged="#userInput" stroke="#949494" strokeType="INSIDE" width="425.0" />
+         </children>
+      </HBox>
+      <AnchorPane maxHeight="0.0" maxWidth="0.0" minHeight="0.0" minWidth="0.0">
+         <children>
+            <VBox fx:id="groupeParticuleUtilisateur" alignment="CENTER" layoutX="-30.0" layoutY="95.0" AnchorPane.leftAnchor="-280.0" AnchorPane.topAnchor="-145.0">
+               <children>
+                  <Circle fx:id="particuleUtilisateur" fill="DODGERBLUE" radius="20.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                  <Label fx:id="texteParticuleUtilisateur" text="Label" visible="false" />
+               </children>
+            </VBox>
+            <VBox fx:id="groupeParticuleA" alignment="CENTER" layoutX="-30.0" layoutY="95.0" AnchorPane.leftAnchor="-280.0" AnchorPane.topAnchor="-145.0">
+               <children>
+                  <Circle fx:id="particuleA" fill="DODGERBLUE" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label fx:id="texteParticuleA" text="Label" />
+               </children>
+            </VBox>
+            <VBox fx:id="groupeParticuleB" alignment="CENTER" layoutX="-30.0" layoutY="95.0" AnchorPane.leftAnchor="-280.0" AnchorPane.topAnchor="-145.0">
+               <children>
+                  <Circle fx:id="particuleB" fill="DODGERBLUE" radius="20.0" stroke="BLACK" strokeType="INSIDE" translateX="475.0" />
+                  <Label fx:id="texteParticuleB" text="Label" />
+               </children>
+            </VBox>
+            <VBox fx:id="groupeParticuleReponse" alignment="CENTER" layoutX="-10.0" layoutY="115.0" visible="false" AnchorPane.leftAnchor="-280.0" AnchorPane.topAnchor="-145.0">
+               <children>
+                  <Circle fx:id="particuleReponse" radius="20.0" stroke="#00c5ff" strokeType="INSIDE">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.31018519401550293" green="1.0" blue="0.4711419641971588" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Circle>
+                  <Label fx:id="texteParticuleReponse" text="Réponse" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

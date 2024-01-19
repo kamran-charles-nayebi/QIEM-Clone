@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="simulator:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/simulator_jar</output-path>
+    <root id="archive" name="simulator.jar">
+      <element id="module-output" name="simulator" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/mariuszgromada/math/MathParser.org-mXparser/5.0.7/MathParser.org-mXparser-5.0.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/json/json/20220924/json-20220924.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

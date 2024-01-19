@@ -1,0 +1,113 @@
+{
+  "ReponseTextuelle": [
+    {
+      "Format": "%.0f",
+      "Matiere": "ManipCharges",
+      "Reponse": "%s*2",
+      "Question": "On met en contact deux sphères conductrices identiques, puis on les sépare. La charge finale sur chaque sphère est de %s micro Coulomb. Si la première sphère était initialement neutre, quelle est la charge initiale de la deuxième? (répondre avec juste le nombre)",
+      "Solution": "Les charges de la sphère chargée initialement se sont également dispersées dans les deux sphères. La charge initiale de la sphère chargée est donc le double de sa charge actuelle."
+    }
+  ],
+  "ReponseChoix": [
+    {
+      "ChoixReponse": "Semi-conducteurs;Conducteurs;Supraconducteurs",
+      "Matiere": "Conductivite",
+      "Reponse": "Isolants",
+      "Question": "L'air pur et l'eau pure sont des",
+      "Solution": "En effet, l'air pur et l'eau de conduisent pas l'électricité. Ils sont donc des isolants."
+    },
+    {
+      "ChoixReponse": "Isolant;Conducteur;Supraconducteur",
+      "Matiere": "Conductivite",
+      "Reponse": "Semi-conducteur",
+      "Question": "Le silicone est un",
+      "Solution": "En effet, les propriétés du silicone permettent le passage des électrons seulement dans certains cas, c'est pourquoi il est semi-conducteur."
+    },
+    {
+      "ChoixReponse": "il a une résistance infinie;il amplifie l'électricité;il produit de l'électricité",
+      "Matiere": "Conductivite",
+      "Reponse": "il a une résistance nulle",
+      "Question": "Un supraconducteur est spécial car",
+      "Solution": "En effet, un supraconducteur n'offre aucune résistance au passage des électrons, ce qui le rend parfait pour transporter sur de longues distances des électrons."
+    }
+  ],
+  "ReponseChargeLineaire": [
+    {
+      "Categorie": "ChargeLineaireEquilibre",
+      "ChPartU": "+1",
+      "ChPartB": "+1",
+      "Matiere": "ForceCharge",
+      "ChPartA": "+4",
+      "Reponse": "51:81",
+      "Question": "Positionne la charge pour qu'elle soit en équilibre",
+      "PosPartA": "0",
+      "Solution": "Une charge en équilibre doit subir une force résultante égale à zéro. La position de la charge se trouve donc en comparant ces deux formules : q1/d^2=q2/(D-d)^2 où D est la distance entre les deux charges et d est la position de la charge à équilibrer",
+      "PosPartB": "100"
+    },
+    {
+      "ChPartU": "+1",
+      "ChPartB": "+2",
+      "Matiere": "ForceCharge",
+      "ChPartA": "-2",
+      "Reponse": "76:100",
+      "Question": "Positionne la charge pour qu'elle subisse une force totale vers la droite",
+      "PosPartA": "0",
+      "Solution": "La charge à positionner est positive, donc elle se fait repousser par les charges positive et est attirée par les charges négatives.",
+      "PosPartB": "75"
+    },
+    {
+      "ChPartU": "+1",
+      "ChPartB": "+2",
+      "Matiere": "ForceCharge",
+      "ChPartA": "+2",
+      "Reponse": "31:54",
+      "Question": "Positionne la charge pour qu'elle subisse une force totale vers la droite",
+      "PosPartA": "30",
+      "Solution": "La charge à positionner est positive, donc elle se fait repousser par les charges positive et est attirée par les charges négatives.",
+      "PosPartB": "100"
+    }
+  ],
+  "ReponseLogique": [
+    {
+      "Variables": {
+        "Force": "0.25:5:%.2f",
+        "Charge1": "1e-9:1e-7:%4.1e",
+        "Charge2": "1e-9:1e-7:%4.1e",
+        "k": "9e9",
+        "Distance": ""
+      },
+      "Matiere": "Force électrique",
+      "Reponse": "{Distance}:√(9e9*{Charge1}*{Charge2}/{Force})",
+      "Question": "Deux petites sphères ont des charges de {Charge1}C et de {Charge2}C respectivement. Quelle distance les sépare si elles se repoussent avec une force dont le module est de {Force} N?",
+      "Solution": "Il faut utiliser la loi de Coulomb avec les variables données et résoudre pour {Distance}"
+    },
+    {
+      "Variables": {
+        "Force": "0.25:5:%.2f",
+        "Charge1": "1e-9:1e-7:%4.1e",
+        "Charge2": "",
+        "k": "9e9",
+        "Distance": "0.01:0.08:%4.1e"
+      },
+      "Matiere": "Force électrique",
+      "Reponse": "{Charge2}:{Distance}^2*{Force}/(9e9*{Charge1})",
+      "Question": "Deux petites sphères sont chargées et à une distance de {Distance} m. Quelle est la charge de la deuxième si la première à une charge de {Charge1}C et elles se repoussent avec une force dont le module est de {Force} N?",
+      "Solution": "Il faut utiliser la loi de Coulomb avec les variables données et résoudre pour q2"
+    },
+    {
+      "Variables": {
+        "Force": "",
+        "g": "9.81",
+        "Charge1": "1e-9:1e-7:%4.1e",
+        "Rayon": "0.01:0.08:%4.1e",
+        "Charge2": "",
+        "Masse": "0.01:0.08:%4.1e",
+        "k": "9e9"
+      },
+      "Matiere": "Force électrique",
+      "Reponse": "{Charge2}:{Rayon}^2*({Masse}*{g})/(9e9*{Charge1})",
+      "Question": "Dans un tube en plastique transparent, on voit deux sphères de métal. La première touche au sol en plastique et la deuxième flotte au dessus de la première à une distance de {Rayon}m. Quelle est la charge de la deuxième sphère si la première est de {Charge1} et que les deux ont une masse de {Masse} kilogrammes?",
+      "Solution": "Il faut utiliser la deuxième loi de Newton afin de calculer la force gravitationnelle sur la sphère et ensuite la loi de Coulomb afin de déterminer la charge"
+    }
+  ]
+}
